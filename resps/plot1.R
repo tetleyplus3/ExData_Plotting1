@@ -23,6 +23,7 @@ rm(only_2_days)
 ## Plotting the first plot
 ## This plot is a histogram
 ## 1 create the graphics device (png file)
+Sys.setlocale("LC_TIME","English_United States.1252") ## Sets english as default
 png(filename = "plot1.png", width = 480, height = 480, units = "px")
 ## Now the plot
 hist(plot_data$Global_active_power, col = "red", breaks = 12,
